@@ -1,327 +1,405 @@
-void main() {
-  String nome = "Everton";
-  int idade = 27;
-  String cidade = "São Cristóvão";
-  print("Meu nome é $nome");
-  print("Tenho $idade anos");
-  print("Moro em $cidade");
-}
+// void main() {
+//   String nome = "Everton";
+//   int idade = 27;
+//   String cidade = "São Cristóvão";
+//   print("Meu nome é $nome");
+//   print("Tenho $idade anos");
+//   print("Moro em $cidade");
+// }
 
-void main(){
-  String nome = "Everton";
-  int idade = 27;
-  double altura = 1.83;
-  bool estudandoFlutter = true;
+// void main(){
+//   String nome = "Everton";
+//   int idade = 27;
+//   double altura = 1.83;
+//   bool estudandoFlutter = true;
 
-  print("Nome: $nome");
-  print("Idade: $idade");
-  print("Altura: $altura");
-  print("Estudando Flutter: $estudandoFlutter");
-}
+//   print("Nome: $nome");
+//   print("Idade: $idade");
+//   print("Altura: $altura");
+//   print("Estudando Flutter: $estudandoFlutter");
+// }
 
-void main() {
-  int idade = 17;
-  if (idade >= 18) {
-    print("Pode tirar a carteira de motorista");
-  } else {
-    print("Não pode tirar a carteira de motorista");
+// void main() {
+//   int idade = 17;
+//   if (idade >= 18) {
+//     print("Pode tirar a carteira de motorista");
+//   } else {
+//     print("Não pode tirar a carteira de motorista");
 
-  }
-  }
+//   }
+//   }
 
-void main() {
-  String usuario = "Everton";
-  String senha = "123111456";
-  if (usuario == "Everton" && senha == "123456") {
-    print("Login bem-sucedido");
-  } else {
-    print("Usuario ou senha incorretos");
-  }
-}
+// void main() {
+//   String usuario = "Everton";
+//   String senha = "123111456";
+//   if (usuario == "Everton" && senha == "123456") {
+//     print("Login bem-sucedido");
+//   } else {
+//     print("Usuario ou senha incorretos");
+//   }
+// }
 
-void main() {
-    int nota = 7;
+// void main() {
+//     int nota = 7;
 
-    if (nota >= 7) {
-        print("Aprovadaço");
-    } else if (nota >= 5) {
-        print("Recuperação");
-    } else {
-        print("Reprovado"); 
-    }
-    }
- void main() {
-    int nivel = 32;
+//     if (nota >= 7) {
+//         print("Aprovadaço");
+//     } else if (nota >= 5) {
+//         print("Recuperação");
+//     } else {
+//         print("Reprovado"); 
+//     }
+//     }
+//  void main() {
+//     int nivel = 32;
 
-    if (nivel >= 50) {
-        print("Mestre");
-    }
-    else if (nivel >= 30) {
-        print("Veterano");
-    } else {
-        print("Iniciante");
-    }
- }
+//     if (nivel >= 50) {
+//         print("Mestre");
+//     }
+//     else if (nivel >= 30) {
+//         print("Veterano");
+//     } else {
+//         print("Iniciante");
+//     }
+//  }
 
-void main() {
-    int nota = 9;
+// void main() {
+//     int nota = 9;
 
-    if (nota >= 9) {
-        print("Excelente");
-    }
-    else if (nota >= 7) {
-        print("Aprovado");
-    }
-    else if (nota >= 5) {
-        print("Recuperação");
-    } else {
-        print("Reprovado");
-    }
-    }
+//     if (nota >= 9) {
+//         print("Excelente");
+//     }
+//     else if (nota >= 7) {
+//         print("Aprovado");
+//     }
+//     else if (nota >= 5) {
+//         print("Recuperação");
+//     } else {
+//         print("Reprovado");
+//     }
+//     }
 
-void main() {
-    int idade = 10;
+// void main() {
+//     int idade = 10;
     
-    if (idade >= 60) {
-        print("Idoso");
-    }
-    else if (idade >= 18 && idade <= 59) {
-        print("Adulto");
-    }
-    else if (idade >= 13 && idade <= 17) {
-        print("Adolescente");   
-    } else {
-        print("Criança");
-    }
-    }
+//     if (idade >= 60) {
+//         print("Idoso");
+//     }
+//     else if (idade >= 18 && idade <= 59) {
+//         print("Adulto");
+//     }
+//     else if (idade >= 13 && idade <= 17) {
+//         print("Adolescente");   
+//     } else {
+//         print("Criança");
+//     }
+//     }
 
-import 'dart:io';
+// import 'dart:io';
 
-void main() {
-    print("Digite seu nome: ");
+// void main() {
+//     print("Digite seu nome: ");
 
-    String? nome = stdin.readLineSync();
+//     String? nome = stdin.readLineSync();
 
-    print("Olá, $nome! Bem-vindo ao Boteco das Ideias(e alcool também!)!");
-}
+//     print("Olá, $nome! Bem-vindo ao Boteco das Ideias(e alcool também!)!");
+// }
 
-void main() {
-    for (int i = 1; i <= 5; i++) {
-        print(i);
-    }
-}
+// void main() {
+//     for (int i = 1; i <= 5; i++) {
+//         print(i);
+//     }
+// }
 
-void main() {
-    for (int i = 1; i < 3; i++) {
-        print("Olá");
-    }
-}
+// void main() {
+//     for (int i = 1; i < 3; i++) {
+//         print("Olá");
+//     }
+// }
 
-void main() {
-    for (int i = 0; i <= 10; i+= 2) {
-        print(i);
-    }
-}
+// void main() {
+//     for (int i = 0; i <= 10; i+= 2) {
+//         print(i);
+//     }
+// }
 
-void main() {
-    for (int i = 1; i <= 10; i++){
-        print(i);
-    }
+// void main() {
+//     for (int i = 1; i <= 10; i++){
+//         print(i);
+//     }
 
-    for (int i = 10; i >= 1; i--){
-        print(i);
+//     for (int i = 10; i >= 1; i--){
+//         print(i);
     
-    if (i == 1) {
-        print("Feliz Ano Novo!");
-    }
-    }
+//     if (i == 1) {
+//         print("Feliz Ano Novo!");
+//     }
+//     }
 
-    for (int i = 0; i <= 20; i+= 2) {
-        print(i);
-    }
-    for (int i = 10; i >=0; i-= 2) {
-        print(i);
-    }
-}
+//     for (int i = 0; i <= 20; i+= 2) {
+//         print(i);
+//     }
+//     for (int i = 10; i >=0; i-= 2) {
+//         print(i);
+//     }
+// }
 
-void main() {
-    int i = 1;
+// void main() {
+//     int i = 1;
 
-    while ( i <= 5) {
-        print(i);
-        i++;
+//     while ( i <= 5) {
+//         print(i);
+//         i++;
     
-    }
+//     }
 
-    int i = 10;
+//     int i = 10;
 
-    while (i >= 1) {
+//     while (i >= 1) {
         
-        print(i);
+//         print(i);
         
-        i--;
+//         i--;
 
-    }
+//     }
 
-    print("Fim");
+//     print("Fim");
 
-    int i = 1;
+//     int i = 1;
 
-    while (i <= 5) {
-        print(i);
+//     while (i <= 5) {
+//         print(i);
 
-        i++;
-    }
+//         i++;
+//     }
 
-    int i =10;
+//     int i =10;
 
-    while (i >= 1) {
+//     while (i >= 1) {
         
-        print(i);
+//         print(i);
 
-        i--;
-    }
+//         i--;
+//     }
 
-    int i = 0;
+//     int i = 0;
 
-    while (i <= 20) {
+//     while (i <= 20) {
 
-        print(i);
+//         print(i);
 
-        i+= 2;
-    }
+//         i+= 2;
+//     }
 
-}
-void main() {
+// }
+// void main() {
 
-List<String> nomes = ["Everton", "João", "Maria", "Pedro", "Ana"];
+// List<String> nomes = ["Everton", "João", "Maria", "Pedro", "Ana"];
 
-for (String nome in nomes) {
-    print(nome);
-}
-}
+// for (String nome in nomes) {
+//     print(nome);
+// }
+// }
 
-void main() {
-    List<String> frutas = ["Maçã", "Banana", "Laranja", "Uva", "Abacaxi"];
-    frutas[1] = "Melancia";
-    frutas.add("Melão");
-    frutas.remove("Uva");
-    frutas.removeAt(2);
-    print(frutas.length);
-    print(frutas.last);
-    print(frutas.first);
-}
+// void main() {
+//     List<String> frutas = ["Maçã", "Banana", "Laranja", "Uva", "Abacaxi"];
+//     frutas[1] = "Melancia";
+//     frutas.add("Melão");
+//     frutas.remove("Uva");
+//     frutas.removeAt(2);
+//     print(frutas.length);
+//     print(frutas.last);
+//     print(frutas.first);
+// }
 
-void main() {
-    List<String> jogos = [
-        "Minecraft",
-        "Valorant",
-        "Stardew Valley"
-    ];
-    print(jogos);
-    jogos.add("The Witcher 3");''
+// void main() {
+//     List<String> jogos = [
+//         "Minecraft",
+//         "Valorant",
+//         "Stardew Valley"
+//     ];
+//     print(jogos);
+//     jogos.add("The Witcher 3");''
 
-    print(jogos);
+//     print(jogos);
 
-    jogos.remove("Valorant");
+//     jogos.remove("Valorant");
 
-    print(jogos);
+//     print(jogos);
 
-    print(jogos.length);
+//     print(jogos.length);
 
-    List<String> animais = ["Cachorro", "Gato", "Coelho"];
-    print(animais);
+//     List<String> animais = ["Cachorro", "Gato", "Coelho"];
+//     print(animais);
 
-    List<String> cidades = ["São Cristóvão", "Aracaju", "Itabaiana", "Lagarto", "Estância"];
-    print(cidades.first);
-    print(cidades.last);
+//     List<String> cidades = ["São Cristóvão", "Aracaju", "Itabaiana", "Lagarto", "Estância"];
+//     print(cidades.first);
+//     print(cidades.last);
     
-    List<int> numeros = [10, 20, 30, 40];
-    numeros.add(50);
-    numeros.remove(20);
-    print(numeros);
+//     List<int> numeros = [10, 20, 30, 40];
+//     numeros.add(50);
+//     numeros.remove(20);
+//     print(numeros);
 
-}
+// }
+
+// void main() {
+//     String nome = "Tarion";
+//     String classe = "Ferreiro";
+
+//     int nivel = 1;
+//     int vida = 100;
+//     int mana = 30;
+//     int ouro = 50;
+
+//     print("================================");
+//     print("Nome: $nome");
+//     print("===============================");
+//     print("Classe: $classe");
+//     print("Nível: $nivel");
+//     print("Vida: $vida");
+//     print("Mana: $mana");
+//     print("Ouro: $ouro");
+//     print("================================");
+
+// }
+
+// import 'dart:io';
+
+// void main() {
+//     print("Digite o nome do herói: ");
+
+//     String? nome = stdin.readLineSync();
+
+//     print("Bem-vindo, $nome!");
+
+
+// }
+
+// void main() {
+    // String nome = "Tarion";
+    // String classe = "Ferreiro";
+    // int nivel = 3;
+    // int vida = 120;
+    // int mana = 45;
+    // int ouro = 180;
+    // bool espadaEquipada = true;
+
+//     print("================================");
+//     print(" FICHA DO HERÓI");
+//     print("================================");
+
+//     print("Nome: $nome");
+//     print("Classe: $classe");
+//     print("Nível: $nivel");
+//     print("Vida: $vida");
+//     print("Mana: $mana");
+//     print("Ouro: $ouro");
+//     print("Espada Equipada: $espadaEquipada");
+
+//     print("================================");
+
+//     print("Um Goblin apareceu!");
+
+//     int danoGoblin = 20;
+
+//     print("O Goblin causou $danoGoblin de dano!");
+
+//     vida =- danoGoblin;
+//     print("Vida atual: $vida"); 
+
+//     print("Tarion causou 35 de dano e derrotou o Goblin!");
+//     print("Tarion encontrou um baú!");
+//     print("Tarion ganhou 200 xp");
+
+//     int xpBatalha = 200;
+
+//     if (xpBatalha >=150){
+//         nivel ++;
+//     }
+//     print("Novo nível: $nivel");
+
+//     int recompensa = 100;
+//     ouro += recompensa;
+
+//     print("Ouro atual: $ouro");
+
+// }
+
+// void main() {
+//     String nome = "Tarion";
+//     String classe = "Ferreiro";
+//     int nivel = 3;
+//     int vida = 120;
+//     int mana = 45;
+//     int ouro = 180;
+//     bool espadaEquipada = true;
+
+//     String inimigo = "Goblin";
+//     int vidaGoblin = 50;
+//     int ataqueGoblin = 15;
+
+//     int escolha =1;
+
+//     if (escolha == 1) {
+//         print("Você atacou!");
+//     } else if (escolha == 2) {
+//         print(" você levantou o escudo!");
+//     } else {
+//         print("Você fugiu!");
+//     }
+
+//     if (escolha == 1) {
+//         vidaGoblin -= 20;
+//         print("vida atual do Goblin: $vidaGoblin");
+//     }
+//     if (vidaGoblin <= 0) {
+//         print("Goblin derrotado");
+//     }
+
+//     if (vidaGoblin > 0) {
+//         vida -= ataqueGoblin;
+//         print("O Goblin atacou!");
+//     }
+
+// }
 
 void main() {
-    String nome = "Tarion";
-    String classe = "Ferreiro";
+    String nome = "Jubicleiton"; 
+    int vida = 145;
+    int ataque = 25;
 
-    int nivel = 1;
-    int vida = 100;
-    int mana = 30;
-    int ouro = 50;
-
-    print("================================");
-    print("Nome: $nome");
-    print("===============================");
-    print("Classe: $classe");
-    print("Nível: $nivel");
-    print("Vida: $vida");
-    print("Mana: $mana");
-    print("Ouro: $ouro");
-    print("================================");
-
-}
-
-import 'dart:io';
-
-void main() {
-    print("Digite o nome do herói: ");
-
-    String? nome = stdin.readLineSync();
-
-    print("Bem-vindo, $nome!");
-
-
-}
-
-void main() {
-    String nome = "Tarion";
-    String classe = "Ferreiro";
-    int nivel = 3;
-    int vida = 120;
-    int mana = 45;
-    int ouro = 180;
-    bool espadaEquipada = true;
-
-    print("================================");
-    print(" FICHA DO HERÓI");
-    print("================================");
-
-    print("Nome: $nome");
-    print("Classe: $classe");
-    print("Nível: $nivel");
-    print("Vida: $vida");
-    print("Mana: $mana");
-    print("Ouro: $ouro");
-    print("Espada Equipada: $espadaEquipada");
-
-    print("================================");
+    String nomeGoblin = "Joaõzinho";
+    int vidaGoblin = 120;
+    int ataqueGoblin = 20;
 
     print("Um Goblin apareceu!");
+    print(" 1 - Atacar");
+    print(" 2 - Defender");
+    print(" 3 - fugir");
 
-    int danoGoblin = 20;
+    int escolha = 1;
 
-    print("O Goblin causou $danoGoblin de dano!");
+    if (escolha == 1) {
+        vidaGoblin -= ataque;
 
-    vida =- danoGoblin;
-    print("Vida atual: $vida"); 
+        print("$nome Atacou o $nomeGoblin!");
 
-    print("Tarion causou 35 de dano e derrotou o Goblin!");
-    print("Tarion encontrou um baú!");
-    print("Tarion ganhou 200 xp");
-
-    int xpBatalha = 200;
-
-    if (xpBatalha >=150){
-        nivel ++;
+        print("vida atual de $nomeGoblin: $vidaGoblin");
     }
-    print("Novo nível: $nivel");
+    else if (escolha == 2) {
+        ataqueGoblin -= 10;
+        print("Você bloqueou parte do dano");
+    } else {
+        print("$nome fugiu da batalha.");
+    }
 
-    int recompensa = 100;
-    ouro += recompensa;
-
-    print("Ouro atual: $ouro");
-
+    if (vidaGoblin > 0 && escolha != 3) {
+        vida -= ataqueGoblin;
+        print("Goblin atacou!");
+        print("Vida de  atual de $nome: $vida");
+    }
+    else if(vidaGoblin <= 0 && escolha != 3) {
+        print("VITÓRIA!!");
+    }
 }
