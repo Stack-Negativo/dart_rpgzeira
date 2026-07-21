@@ -364,42 +364,68 @@
 
 // }
 
-void main() {
-    String nome = "Jubicleiton"; 
-    int vida = 145;
-    int ataque = 25;
+// void main() {
+//     String nome = "Jubicleiton"; 
+//     int vida = 145;
+//     int ataque = 25;
 
-    String nomeGoblin = "Joaõzinho";
-    int vidaGoblin = 120;
-    int ataqueGoblin = 20;
+//     String nomeGoblin = "Joaõzinho";
+//     int vidaGoblin = 120;
+//     int ataqueGoblin = 20;
 
-    print("Um Goblin apareceu!");
-    print(" 1 - Atacar");
-    print(" 2 - Defender");
-    print(" 3 - fugir");
+//     print("Um Goblin apareceu!");
+//     print(" 1 - Atacar");
+//     print(" 2 - Defender");
+//     print(" 3 - fugir");
 
-    int escolha = 1;
+//     int escolha = 1;
 
-    if (escolha == 1) {
-        vidaGoblin -= ataque;
+//     if (escolha == 1) {
+//         vidaGoblin -= ataque;
 
-        print("$nome Atacou o $nomeGoblin!");
+//         print("$nome Atacou o $nomeGoblin!");
 
-        print("vida atual de $nomeGoblin: $vidaGoblin");
-    }
-    else if (escolha == 2) {
-        ataqueGoblin -= 10;
-        print("Você bloqueou parte do dano");
-    } else {
-        print("$nome fugiu da batalha.");
-    }
+//         print("vida atual de $nomeGoblin: $vidaGoblin");
+//     }
+//     else if (escolha == 2) {
+//         ataqueGoblin -= 10;
+//         print("Você bloqueou parte do dano");
+//     } else {
+//         print("$nome fugiu da batalha.");
+//     }
 
-    if (vidaGoblin > 0 && escolha != 3) {
-        vida -= ataqueGoblin;
-        print("Goblin atacou!");
-        print("Vida de  atual de $nome: $vida");
-    }
-    else if(vidaGoblin <= 0 && escolha != 3) {
-        print("VITÓRIA!!");
-    }
-}
+//     if (vidaGoblin > 0 && escolha != 3) {
+//         vida -= ataqueGoblin;
+//         print("Goblin atacou!");
+//         print("Vida de  atual de $nome: $vida");
+//     }
+//     else if(vidaGoblin <= 0 && escolha != 3) {
+//         print("VITÓRIA!!");
+//     }
+// }
+
+// void main() {
+//     String heroi = "Tarion";
+//     int vida = 120;
+//     int ataque = 25;
+
+//     String inimigo = "Goblin Guerreiro";
+//     int vidaGoblin = 80;
+//     int ataqueGoblin = 18;
+
+//     int escolha = 1;
+
+//     while (vida > 0 && vidaGoblin >0 ) {
+//         print("$heroi atacou o $inimigo");
+//         if (vidaGoblin-ataque <= 0){
+//             vidaGoblin = 0;
+//         } else{
+//             vidaGoblin -= ataque;
+//         }
+//         print("Vida atual $inimigo: $vidaGoblin");
+//         print("$inimigo atacou o $heroi");
+//         vida -= ataqueGoblin;
+//         print("Vida atual $heroi: $vida");
+// }
+//  print("VITÓRIA!");
+// }
