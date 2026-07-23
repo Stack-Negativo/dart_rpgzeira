@@ -545,31 +545,106 @@
 //         print("Classe inexistente.");
 //     }
 // }
-import 'dart:io';
-void main() {
+// import 'dart:io';
+// void main() {
 
-    print("1 - Atacar");
-    print("2 - Defender");
-    print("3 - Fugir");
+//     print("1 - Atacar");
+//     print("2 - Defender");
+//     print("3 - Fugir");
+
+//     String? entrada = stdin.readLineSync();
+
+//     int escolha = int.parse(entrada!);
+
+//     switch (escolha) {
+//         case 1:
+//         print("Você atacou");
+//         break;
+
+//         case 2:
+//         print("Você levantou o escudo!");
+//         break;
+
+//         case 3:
+//         print("Você fugiu!");
+//         break;
+
+//         default:
+//         print("Opção inválida.");
+//     }
+// }
+
+// import 'dart:io';
+
+// void main() {
+//     print("===== TAVERNA =====");
+
+//     print("1 - Comprar pão");
+//     print("2 - Dormir");
+//     print("3 - Conversar com o ferreiro");
+//     print("4 - Sair");
+
+//     String? entrada = stdin.readLineSync();
+
+//     int menuTaverna = int.parse(entrada!);
+
+//     switch (menuTaverna) {
+//         case 1:
+//         print("Comprar pão");
+//         break;
+
+//         case 2:
+//         print("Dormir");
+//         break;
+
+//         case 3:
+//         print("Conversar com o ferreiro");
+//         break;
+
+//         case 4:
+//         print("Sair");
+//         break;
+
+//         default:
+//         print("Opção inválida!");
+//     }
+// }
+
+import 'dart:io';
+void main(){
+    print("===== Escolha sua classe =====");
+    print("1 - Guerreiro");
+    print("2 - Arqueiro");
+    print("3 - Mago");
+    print("4 - Ladino");
 
     String? entrada = stdin.readLineSync();
 
-    int escolha = int.parse(entrada!);
+    int escolhaClasse = int.parse(entrada!);
 
-    switch (escolha) {
+    switch(escolhaClasse){
         case 1:
-        print("Você atacou");
+        print("Guerreiro:");
+        print("Alta vida e ataque físico");
         break;
 
         case 2:
-        print("Você levantou o escudo!");
+        print("Arqueiro:");
+        print("Dano Crítico a distância aumentado e bonus em terreno alto");
         break;
 
         case 3:
-        print("Você fugiu!");
+        print("Mago:");
+        print("Bonus de defesa elemental e ataque causam efeitos elementais");
+        break;
+
+        case 4:
+        print("Ladino:");
+        print("Chance de crítico aumentada para ataque furtivos, passos leves");
         break;
 
         default:
-        print("Opção inválida.");
+        print("Opção inválida");
     }
+
 }
