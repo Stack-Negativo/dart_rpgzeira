@@ -429,42 +429,119 @@
 // }
 //  print("VITÓRIA!");
 // }
+// void main() {
+//     String heroi = "Tarion";
+//     int vida = 125;
+//     int ataque = 25;
+
+//     String inimigo = "Goblin Guerreiro";
+//     int vidaInimigo = 120;
+//     int ataqueInimigo = 15;
+
+//     int escolha = 1;
+
+//     while(vida > 0 && vidaInimigo >0 ) {
+//         if (escolha == 1) {
+//             print("-------------------------------");
+//             print("$heroi atacou $inimigo");
+//             vidaInimigo -= ataque;
+
+//         if (vidaInimigo <= 0) {
+//             vidaInimigo = 0;
+//         }
+//         print("Vida atual $inimigo: $vidaInimigo");
+//         }
+//         if (vidaInimigo <= 0) {
+//             print("Vitória!");
+//             break;
+//         }
+//         print("$inimigo atacou $heroi!");
+//         vida -= ataqueInimigo;
+//         if (vida <=0){
+//             vida = 0;
+//         }
+//         print("Vida atual $heroi: $vida");
+//         if (vida <= 0) {
+//             print("Derrota");
+//             break;
+//         }
+//         print("-------------------------------");
+//     }
+// }
+// void main(){
+// int escolha = 2;
+
+// switch (escolha) {
+//     case 1:
+//     print("Tarion atacou!");
+//     break;
+
+//     case 2:
+//     print("Tarion defendeu com escudo!");
+//     break;
+
+//     case 3:
+//     print("Tarion fugiu!");
+//     break;
+
+//     default:
+//     print("Escolha inválida!");
+// }
+// }
+
+// void main() {
+
+//     int tabernaMenu = 2;
+
+//     switch(tabernaMenu) {
+//         case 1:
+//         print("Comprar comida");
+//         break;
+
+//         case 2:
+//         print("Dormir");
+//         break;
+
+//         case 3:
+//         print("Conversar com o ferreiro");
+//         break;
+
+//         case 4:
+//         print("Sair");
+//         break;
+
+//         default:
+//         print("Escolha inválida!");
+//     }
+// }
+
 void main() {
-    String heroi = "Tarion";
-    int vida = 125;
-    int ataque = 25;
+    int classes = 4;
 
-    String inimigo = "Goblin Guerreiro";
-    int vidaInimigo = 120;
-    int ataqueInimigo = 15;
+    print("Informe sua classe:");
 
-    int escolha = 1;
+    switch(classes) {
+        case 1:
+        print("Guerreiro");
+        print("Alta vida e ataque físico");
+        break;
 
-    while(vida > 0 && vidaInimigo >0 ) {
-        if (escolha == 1) {
-            print("-------------------------------");
-            print("$heroi atacou $inimigo");
-            vidaInimigo -= ataque;
+        case 2:
+        print("Arqueiro");
+        print("Dano Crítico a distância aumentado e bonus em terreno alto");
+        break;
 
-        if (vidaInimigo <= 0) {
-            vidaInimigo = 0;
-        }
-        print("Vida atual $inimigo: $vidaInimigo");
-        }
-        if (vidaInimigo <= 0) {
-            print("Vitória!");
-            break;
-        }
-        print("$inimigo atacou $heroi!");
-        vida -= ataqueInimigo;
-        if (vida <=0){
-            vida = 0;
-        }
-        print("Vida atual $heroi: $vida");
-        if (vida <= 0) {
-            print("Derrota");
-            break;
-        }
-        print("-------------------------------");
+        case 3:
+        print("Mago");
+        print("Bonus de defesa elemental e ataque causam efeitos elementais");
+        break;
+
+        case 4:
+        print("Ladino");
+        print("Chance de crítico aumentada para ataque furtivos, passos leves");
+        break;
+
+        default:
+        print("Classe inexistente.");
     }
 }
