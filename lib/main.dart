@@ -429,3 +429,42 @@
 // }
 //  print("VITÓRIA!");
 // }
+void main() {
+    String heroi = "Tarion";
+    int vida = 125;
+    int ataque = 25;
+
+    String inimigo = "Goblin Guerreiro";
+    int vidaInimigo = 120;
+    int ataqueInimigo = 15;
+
+    int escolha = 1;
+
+    while(vida > 0 && vidaInimigo >0 ) {
+        if (escolha == 1) {
+            print("-------------------------------");
+            print("$heroi atacou $inimigo");
+            vidaInimigo -= ataque;
+
+        if (vidaInimigo <= 0) {
+            vidaInimigo = 0;
+        }
+        print("Vida atual $inimigo: $vidaInimigo");
+        }
+        if (vidaInimigo <= 0) {
+            print("Vitória!");
+            break;
+        }
+        print("$inimigo atacou $heroi!");
+        vida -= ataqueInimigo;
+        if (vida <=0){
+            vida = 0;
+        }
+        print("Vida atual $heroi: $vida");
+        if (vida <= 0) {
+            print("Derrota");
+            break;
+        }
+        print("-------------------------------");
+    }
+}
