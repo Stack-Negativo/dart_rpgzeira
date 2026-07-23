@@ -515,33 +515,61 @@
 //     }
 // }
 
+// void main() {
+//     int classes = 4;
+
+//     print("Informe sua classe:");
+
+//     switch(classes) {
+//         case 1:
+//         print("Guerreiro");
+//         print("Alta vida e ataque físico");
+//         break;
+
+//         case 2:
+//         print("Arqueiro");
+//         print("Dano Crítico a distância aumentado e bonus em terreno alto");
+//         break;
+
+//         case 3:
+//         print("Mago");
+//         print("Bonus de defesa elemental e ataque causam efeitos elementais");
+//         break;
+
+//         case 4:
+//         print("Ladino");
+//         print("Chance de crítico aumentada para ataque furtivos, passos leves");
+//         break;
+
+//         default:
+//         print("Classe inexistente.");
+//     }
+// }
+import 'dart:io';
 void main() {
-    int classes = 4;
 
-    print("Informe sua classe:");
+    print("1 - Atacar");
+    print("2 - Defender");
+    print("3 - Fugir");
 
-    switch(classes) {
+    String? entrada = stdin.readLineSync();
+
+    int escolha = int.parse(entrada!);
+
+    switch (escolha) {
         case 1:
-        print("Guerreiro");
-        print("Alta vida e ataque físico");
+        print("Você atacou");
         break;
 
         case 2:
-        print("Arqueiro");
-        print("Dano Crítico a distância aumentado e bonus em terreno alto");
+        print("Você levantou o escudo!");
         break;
 
         case 3:
-        print("Mago");
-        print("Bonus de defesa elemental e ataque causam efeitos elementais");
-        break;
-
-        case 4:
-        print("Ladino");
-        print("Chance de crítico aumentada para ataque furtivos, passos leves");
+        print("Você fugiu!");
         break;
 
         default:
-        print("Classe inexistente.");
+        print("Opção inválida.");
     }
 }
