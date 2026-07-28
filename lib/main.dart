@@ -610,41 +610,129 @@
 //     }
 // }
 
+// import 'dart:io';
+// void main(){
+//     print("===== Escolha sua classe =====");
+//     print("1 - Guerreiro");
+//     print("2 - Arqueiro");
+//     print("3 - Mago");
+//     print("4 - Ladino");
+
+//     String? entrada = stdin.readLineSync();
+
+//     int escolhaClasse = int.parse(entrada!);
+
+//     switch(escolhaClasse){
+//         case 1:
+//         print("Guerreiro:");
+//         print("Alta vida e ataque físico");
+//         break;
+
+//         case 2:
+//         print("Arqueiro:");
+//         print("Dano Crítico a distância aumentado e bonus em terreno alto");
+//         break;
+
+//         case 3:
+//         print("Mago:");
+//         print("Bonus de defesa elemental e ataque causam efeitos elementais");
+//         break;
+
+//         case 4:
+//         print("Ladino:");
+//         print("Chance de crítico aumentada para ataque furtivos, passos leves");
+//         break;
+
+//         default:
+//         print("Opção inválida");
+//     }
+
+// }
 import 'dart:io';
-void main(){
-    print("===== Escolha sua classe =====");
-    print("1 - Guerreiro");
-    print("2 - Arqueiro");
-    print("3 - Mago");
-    print("4 - Ladino");
+void main() {
+    //persoangem
+    String heroi = "Tarion";
+    int vida = 125;
+    int ataque = 25;
 
-    String? entrada = stdin.readLineSync();
+    //inimigo
 
-    int escolhaClasse = int.parse(entrada!);
+    String inimigo = "Goblin";
+    int vidaInimigo = 65;
+    int ataqueInimigo = 15;
 
-    switch(escolhaClasse){
-        case 1:
-        print("Guerreiro:");
-        print("Alta vida e ataque físico");
-        break;
 
-        case 2:
-        print("Arqueiro:");
-        print("Dano Crítico a distância aumentado e bonus em terreno alto");
-        break;
+    while(vida > 0 && vidaInimigo >0 ) {
+        print("====================");
+        print("$heroi: $vida HP");
+        print("$inimigo: $vidaInimigo HP");
+        print("====================");
 
-        case 3:
-        print("Mago:");
-        print("Bonus de defesa elemental e ataque causam efeitos elementais");
-        break;
+        print("========AÇÃO DO JOGADOR========");
+        print("1 - Atacar");
+        print("2 - Defender");
+        print("3 - Fugir");
 
-        case 4:
-        print("Ladino:");
-        print("Chance de crítico aumentada para ataque furtivos, passos leves");
-        break;
+        String? entrada = stdin.readLineSync();
 
-        default:
-        print("Opção inválida");
+        int acao = int.parse(entrada!);
+        bool estaDefendendo = false;
+        switch(acao) {
+            case 1:
+            vidaInimigo -= ataque;
+            print("$heroi atacou o $inimigo!");
+
+            print("====================");
+            print("$heroi: $vida HP");
+            print("$inimigo: $vidaInimigo HP");
+            print("===================="); 
+            
+            
+            if (vidaInimigo <= 0){
+                vidaInimigo = 0;
+            }
+            if (vidaInimigo == 0) {
+                print("$inimigo derrotado, VITÓRIA!");
+            }
+            break;
+
+            case 2:
+            print("$heroi Levantou o escudo!");
+            estaDefendendo = true;
+            break;
+
+            case 3:
+            print("$heroi fugiu da batalha!!");
+            break;
+        }
+        if (acao == 3) {
+            break;
+        }
+        if (vidaInimigo == 0) {
+            break;
+        }
+        if (estaDefendendo) {
+            vida -= ataqueInimigo ~/2;
+        print("====================");
+        print("$inimigo atacou $heroi!");
+        print("$heroi: $vida HP");
+        print("$inimigo: $vidaInimigo HP");
+        print("====================");
+
+        }else{
+            vida -= ataqueInimigo;
+        print("====================");
+        print("$inimigo atacou $heroi com um ataque direto");
+        print("$heroi: $vida HP");
+        print("$inimigo: $vidaInimigo HP");
+        print("====================");
+        }
+
+        if (vida <= 0) {
+            vida = 0;}
+
+        if(vida == 0){
+            print("Derrota");
+            }
     }
-
 }
