@@ -688,7 +688,7 @@ void main() {
             }
 
             if (vidaInimigo == 0) {
-                print("$inimigo derrotado, VITÓRIA!");
+                print("VITÓRIA!");
             }
             break;
 
@@ -711,7 +711,7 @@ void main() {
             break;
         }
         if (estaDefendendo) {
-            
+
         int danoRecebido = ataqueInimigo ~/2;
         vida -= danoRecebido;
 
