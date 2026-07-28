@@ -651,6 +651,7 @@
 import 'dart:io';
 void main() {
     //persoangem
+
     String heroi = "Tarion";
     int vida = 125;
     int ataque = 25;
@@ -661,12 +662,11 @@ void main() {
     int vidaInimigo = 65;
     int ataqueInimigo = 15;
 
-
     while(vida > 0 && vidaInimigo >0 ) {
-        print("====================");
+        print("=========Status========");
         print("$heroi: $vida HP");
         print("$inimigo: $vidaInimigo HP");
-        print("====================");
+        print("=========Status=========");
 
         print("========AÇÃO DO JOGADOR========");
         print("1 - Atacar");
@@ -679,31 +679,30 @@ void main() {
         bool estaDefendendo = false;
         switch(acao) {
             case 1:
-            vidaInimigo -= ataque;
             print("$heroi atacou o $inimigo!");
-
-            print("====================");
-            print("$heroi: $vida HP");
-            print("$inimigo: $vidaInimigo HP");
-            print("===================="); 
-            
+            print("$inimigo recebeu $ataque de dano!");
+            vidaInimigo -= ataque;        
             
             if (vidaInimigo <= 0){
                 vidaInimigo = 0;
             }
+
             if (vidaInimigo == 0) {
                 print("$inimigo derrotado, VITÓRIA!");
             }
             break;
 
             case 2:
-            print("$heroi Levantou o escudo!");
+            print("$heroi Levantou o escudo, bloqueando parte do dano!");
             estaDefendendo = true;
             break;
 
             case 3:
             print("$heroi fugiu da batalha!!");
             break;
+
+            default:
+            print("Ação inválida!");
         }
         if (acao == 3) {
             break;
@@ -712,27 +711,27 @@ void main() {
             break;
         }
         if (estaDefendendo) {
-            vida -= ataqueInimigo ~/2;
-        print("====================");
-        print("$inimigo atacou $heroi!");
-        print("$heroi: $vida HP");
-        print("$inimigo: $vidaInimigo HP");
-        print("====================");
+            
+        int danoRecebido = ataqueInimigo ~/2;
+        vida -= danoRecebido;
+
+        print("$inimigo atacou!");
+        print("$heroi recebeu $danoRecebido de dano!");
 
         }else{
             vida -= ataqueInimigo;
-        print("====================");
-        print("$inimigo atacou $heroi com um ataque direto");
-        print("$heroi: $vida HP");
-        print("$inimigo: $vidaInimigo HP");
-        print("====================");
+            print("$inimigo atacou $heroi com um ataque direto!");
+            print("$heroi recebeu $ataqueInimigo de dano!");
         }
-
         if (vida <= 0) {
             vida = 0;}
-
-        if(vida == 0){
+        print("=======STATUS-ULTIMA-RODADA==========");
+        print("$heroi: $vida HP");
+        print("$inimigo: $vidaInimigo HP");
+        print("=========FIM-TURNO========");
+        
+        if(vida == 0){  
             print("Derrota");
-            }
+        }
     }
 }
