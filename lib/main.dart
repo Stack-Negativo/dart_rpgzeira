@@ -649,6 +649,35 @@
 
 // }
 import 'dart:io';
+void mostrarStatus(
+String heroi,
+int vida,
+String inimigo,
+int vidaInimigo
+) {
+    print("=========Status========");
+    print("$heroi: $vida HP");
+    print("$inimigo: $vidaInimigo HP");
+    print("=========Status=========");
+}
+
+void mostrarMenu(){
+    
+    print("========AÇÃO DO JOGADOR========");
+    print("1 - Atacar");
+    print("2 - Defender");
+    print("3 - Fugir");
+}
+
+int lerAcaoJogador() {
+
+    String? entrada = stdin.readLineSync();
+
+        int acao = int.parse(entrada!);
+
+        return acao;
+}
+
 void main() {
     //persoangem
 
@@ -663,19 +692,17 @@ void main() {
     int ataqueInimigo = 15;
 
     while(vida > 0 && vidaInimigo >0 ) {
-        print("=========Status========");
-        print("$heroi: $vida HP");
-        print("$inimigo: $vidaInimigo HP");
-        print("=========Status=========");
 
-        print("========AÇÃO DO JOGADOR========");
-        print("1 - Atacar");
-        print("2 - Defender");
-        print("3 - Fugir");
+        mostrarStatus(
+        heroi, 
+        vida,
+         inimigo,
+         vidaInimigo);
 
-        String? entrada = stdin.readLineSync();
+         mostrarMenu();
 
-        int acao = int.parse(entrada!);
+         int acao = lerAcaoJogador();
+
         bool estaDefendendo = false;
         switch(acao) {
             case 1:
@@ -725,13 +752,17 @@ void main() {
         }
         if (vida <= 0) {
             vida = 0;}
-        print("=======STATUS-ULTIMA-RODADA==========");
-        print("$heroi: $vida HP");
-        print("$inimigo: $vidaInimigo HP");
-        print("=========FIM-TURNO========");
-        
+
+        mostrarStatus(
+            heroi,
+            vida,
+            inimigo,
+            vidaInimigo
+            );
+
         if(vida == 0){  
             print("Derrota");
+
         }
     }
 }
